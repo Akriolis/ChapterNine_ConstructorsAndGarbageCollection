@@ -1,6 +1,21 @@
 abstract class Animal {
 
-    private int cost;
+    int cost;
+
+    private int size;
+    private String name;
+
+    String getName(){
+        return name;
+    }
+
+    int getSize(){
+        return size;
+    }
+
+    void setName(String name){
+        this.name = name;
+    }
 
     public int getCost(){
         return cost;
@@ -11,6 +26,10 @@ abstract class Animal {
     }
 
     public Animal(String name, int size){
+        System.out.println("Making an animal");
+    }
+
+    public Animal(){
 
     }
 
